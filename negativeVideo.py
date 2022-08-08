@@ -9,3 +9,5 @@ with open(sys.argv[1], 'r+b') as f:
     offset = content.index(bytes.fromhex('6D766864'))
     f.seek(offset + 16)
     f.write(bytes.fromhex('00000001FFFFFFF0'))
+    
+# test
